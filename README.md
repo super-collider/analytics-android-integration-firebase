@@ -1,17 +1,17 @@
 analytics-android-integration-firebase
 =======================================
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.segment.analytics.android.integrations/firebase/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.segment.analytics.android.integrations/firebase)
-[![Javadocs](http://javadoc-badge.appspot.com/com.segment.analytics.android.integrations/firebase.svg?label=javadoc)](http://javadoc-badge.appspot.com/com.segment.analytics.android.integrations/firebase)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.metarouter.analytics.android.integrations/firebase/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.metarouter.analytics.android.integrations/firebase)
+[![Javadocs](http://javadoc-badge.appspot.com/io.metarouter.analytics.android.integrations/firebase.svg?label=javadoc)](http://javadoc-badge.appspot.com/io.metarouter.analytics.android.integrations/firebase)
 
-Firebase Analytics integration for [analytics-android](https://github.com/segmentio/analytics-android).
+Firebase Analytics integration for [analytics-android](https://github.com/super-collider/analytics-android).
 
 ## Installation
 
-To install the Segment-Firebase integration, simply add this line to your gradle file:
+To install the Firebase integration, simply add this line to your gradle file:
 
 ```
-implementation 'com.segment.analytics.android.integrations:firebase:+@aar'
+implementation 'io.metarouter.analytics.android.integrations:firebase:+@aar'
 ```
 
 **Note:** The Firebase SDK requires Android resources. To avoid issues with app crashes please implement using the `aar` package. 
@@ -20,8 +20,6 @@ implementation 'com.segment.analytics.android.integrations:firebase:+@aar'
 To use firebase-integrations 1.4.+ :
 * `Update your app to use (AndroidX) or Android 29`
 * `Upgrade com.android.tools.build:gradle to v3.2.1 or later`
-
-For Android 28 or Lower: [here](https://search.maven.org/artifact/com.segment.analytics.android.integrations/firebase/1.2.0/aar)
 
 Don't forget to add the following dependencies to make sure [Firebase works](https://firebase.google.com/docs/android/setup/):
 ```
@@ -41,7 +39,7 @@ After adding the dependency, you must register the integration with our SDK.  To
 
 
 ```
-import com.segment.analytics.android.integrations.firebase.FirebaseIntegration;
+import io.metarouter.analytics.android.integrations.firebase.FirebaseIntegration;
 
 ```
 
@@ -52,8 +50,6 @@ analytics = new Analytics.Builder(this, "write_key")
                 .use(FirebaseIntegration.FACTORY)
                 .build();
 ```
-
-Please see [our documentation](https://segment.com/docs/integrations/firebase-analytics/) for more information.
 
 
 ## License
@@ -72,7 +68,7 @@ WWWWWW||WWWWWW
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Segment, Inc.
+Copyright (c) 2014 Segment, Inc., (c) 2020 Metarouter, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
